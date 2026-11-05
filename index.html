@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Intercom System, a local Wi-Fi voice intercom application for Android.">
+  <title>Privacy Policy – Intercom System</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #586579;
+      --line: #e3e8ef;
+      --accent: #2457c5;
+      --paper: #ffffff;
+      --page: #f4f6fa;
+      --notice: #fff7e6;
+      --notice-border: #e7bd63;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 36px 16px;
+      background: var(--page);
+      color: var(--ink);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      width: min(860px, 100%);
+      margin: 0 auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 12px 40px rgba(20, 35, 65, .06);
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 2.6rem); line-height: 1.2; letter-spacing: -.03em; }
+    h2 { margin: 32px 0 10px; font-size: 1.25rem; line-height: 1.35; }
+    p { margin: 10px 0; }
+    ul { padding-left: 24px; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    .subtitle { color: var(--muted); margin-top: 0; }
+    .meta { margin: 22px 0 28px; padding: 16px 18px; background: #f7f9fc; border: 1px solid var(--line); border-radius: 12px; }
+    .meta p { margin: 4px 0; }
+    .notice { margin: 22px 0; padding: 16px 18px; background: var(--notice); border: 1px solid var(--notice-border); border-radius: 12px; }
+    .notice strong { display: block; margin-bottom: 4px; }
+    footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+    @media (max-width: 520px) {
+      body { padding: 12px 8px; }
+      main { border-radius: 12px; padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Intercom System</p>
+    </header>
+
+    <section class="meta" aria-label="Application information">
+      <p><strong>Application:</strong> Intercom System</p>
+      <p><strong>Package name:</strong> com.scramsystems.intercomsystem</p>
+      <p><strong>Developer:</strong> Scram Systems</p>
+      <p><strong>Privacy contact:</strong> <a href="mailto:sstherambler@gmail.com">sstherambler@gmail.com</a></p>
+      <p><strong>Last updated:</strong> November 5, 2026</p>
+    </section>
+
+    <p>This Privacy Policy describes how Intercom System (the “App”) accesses, uses, transmits and stores information when you use it. The App is designed to let one Android device act as a host while other devices connect as clients for live voice communication over a local Wi-Fi network or hotspot.</p>
+
+    <div class="notice">
+      <strong>Important audio-security notice</strong>
+      In the current implementation described by this policy, voice packets are sent over the local network using UDP without application-level encryption. Other parties with the ability to monitor the relevant network traffic may be able to access or reconstruct the audio. Use the App only on networks you trust, and do not use it to transmit confidential information.
+    </div>
+
+    <h2>1. Microphone and voice data</h2>
+    <p>The App requests microphone permission so that it can capture your voice during an active intercom session.</p>
+    <ul>
+      <li>Microphone audio is encoded using the Opus audio codec and transmitted in real time to devices participating in the intercom session.</li>
+      <li>Audio is transmitted over the local Wi-Fi network or hotspot using UDP.</li>
+      <li>The App is intended for live communication and does not intentionally record or save conversations as audio files.</li>
+      <li>Audio may be held briefly in device memory or network buffers while it is encoded, transmitted, received and played.</li>
+      <li>The App's core intercom audio path is designed to operate locally and does not require a developer-operated cloud audio server.</li>
+    </ul>
+
+    <h2>2. Local network and connection information</h2>
+    <p>To establish and maintain host/client connections, the App may process technical network information such as local IP addresses, port numbers, connection state and session-related details. This information is used to make local intercom communication work.</p>
+    <p>The App is designed for communication over a shared local Wi-Fi network or hotspot. Network configuration and Android version may affect which local-network permissions are required.</p>
+
+    <h2>3. Technical logs and local storage</h2>
+    <p>The App stores technical connection or diagnostic logs locally on the device for operation and troubleshooting. These logs are not intentionally uploaded by the App to developer-operated servers.</p>
+    <p>The exact contents of these logs depend on the events recorded by the installed version of the App. They may include connection events, timestamps, connection status and technical error details. The App does not use these logs for advertising or user profiling.</p>
+
+    <h2>4. Data sharing and third-party services</h2>
+    <p>Live audio is transmitted to devices participating in the intercom session. This transmission is necessary for the communication feature and is initiated when users start or join a session.</p>
+    <p>The App does not intentionally sell or rent personal information. The App's core intercom feature does not intentionally send voice audio or locally stored connection logs to advertising or analytics servers.</p>
+    <p>If a future version adds analytics, crash-reporting, advertising, cloud services or other third-party software development kits, this policy and the App's Google Play Data safety disclosures will be updated to describe the relevant data practices.</p>
+
+    <h2>5. Retention and deletion</h2>
+    <p>The App does not intentionally retain voice recordings after a live session. Temporary audio buffers are used only as needed for real-time communication.</p>
+    <p>Technical logs are stored locally and may remain on the device until they are cleared by the App, the user or Android. You can generally remove app-managed local data by using Android Settings to clear the App's storage or by uninstalling the App. The precise effect depends on the Android storage location used by the installed version.</p>
+
+    <h2>6. Security</h2>
+    <p>The current audio transport uses UDP without application-level encryption or cryptographic authentication. As a result, the App does not currently provide application-level confidentiality, integrity protection or end-to-end encryption for voice packets. A password-protected Wi-Fi network does not change this limitation of the App's audio transport.</p>
+    <p>Use a trusted network, restrict access to that network, and connect only devices you intend to include in the conversation. Do not transmit sensitive or confidential information using the current unencrypted audio transport.</p>
+
+    <h2>7. Permissions</h2>
+    <p>Depending on the Android version and features used, the App may request:</p>
+    <ul>
+      <li><strong>Microphone:</strong> to capture voice during an intercom session.</li>
+      <li><strong>Network access:</strong> to send and receive audio and maintain local connections.</li>
+      <li><strong>Nearby Wi-Fi or local-network-related permissions:</strong> where required by Android to discover, connect to or communicate with devices on the local network.</li>
+    </ul>
+    <p>Permissions are used for the App's intercom functionality. You can manage permissions through Android Settings, but denying required permissions may prevent the relevant feature from working.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>The App is not designed to collect personal information from children. The developer does not knowingly use the App to collect children's personal information for advertising or profiling.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>This Privacy Policy may be updated if the App's features, permissions, technology or data-handling practices change. The revised policy will be published at this same web address, with an updated “Last updated” date.</p>
+
+    <h2>10. Contact</h2>
+    <p>For questions or privacy-related requests concerning this App, contact the developer using the email address listed at the top of this policy: <a href="mailto:sstherambler@gmail.com">sstherambler@gmail.com</a>.</p>
+
+    <footer>
+      <p>© <span id="year">2026</span> Scram Systems. All rights reserved.</p>
+      <p>Intercom System · com.scramsystems.intercomsystem</p>
+    </footer>
+  </main>
+</body>
+</html>
